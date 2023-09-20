@@ -1,0 +1,114 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+.menu{
+    height: 4em;
+    box-shadow: 0px 0px 6px;
+    background-color: white;
+}
+.menuLogo{
+    padding-left: 3em;
+    padding-top: 0.5em;
+}
+.maintananceNotice{
+    position: fixed;
+    width: 100vw;
+    bottom: -1em;
+    left: 0px;
+    background-color: rgba(245, 152, 2,1);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: smaller;
+    text-align: right;
+    border-radius: 6px 6px 0px 0px;
+    animation-name: updash;
+    animation-duration: 1s;
+}
+.maintananceNotice button{
+    padding: 0px;
+    position: fixed;
+    left: 1.6em;
+    bottom: 5em;
+    padding: 7px;
+    border: none;
+    background: none;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+.closeMaintananceNoticeBtn{
+    height: 1.7vw;
+    width: 1.7vw;
+    min-height: 1em;
+    max-height: 1.4em;
+    min-width: 1em;
+    max-width: 1.4em;
+    opacity: 0.60;
+}
+#maintananceNoticeHeader {
+    color: white;
+    padding-right: 1.6em;
+}
+
+#maintananceNoticeDesc {
+    color: white;
+    padding-right: 2em;
+    padding-left: 100px;
+    padding-bottom: 3em;
+}
+
+@keyframes fadein{
+    1%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 1;
+    }
+}
+
+@keyframes updash{
+    1% {
+        bottom: -8em;
+    }
+    40% {
+        bottom: 0em;
+    }
+    99% {
+        bottom: -1em;
+    }
+}
+.dirBar{
+    position: absolute;
+    top: 0px;
+    left: 11em;
+    padding-left: 2em;
+}
+.dirBar ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    justify-content: space-between;
+}
+.dirBar ul li a{
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+    padding: 1.1em;
+}
+
+@media screen and (max-width: 900px){
+    .menuLogo{
+        position: absolute;
+        height: 4em;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        padding-top: 0.5em;
+        padding-left: 0px;
+    }
+}

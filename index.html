@@ -1,0 +1,35 @@
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="LogoHolder.png" type="x-icon">
+    </head>
+    <title>Hope you like Eggs!!!</title>
+    <body>
+        <div class="menu">
+            <div class="menuLogo">
+                <a href=""><img src="LogoHolder.png" height="200%"></a>
+            </div>
+            <div class="dirBar">
+                <ul>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Order</a></li>
+                    <li><a href="">Rewards</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="maintananceNotice" id="maintananceNotice_">
+        <button onclick="closeMaintananceNotice()"><img src="CloseIcon1.png" class="closeMaintananceNoticeBtn"></button>
+        <h1 id="maintananceNoticeHeader" >We'll be up soon!!!</h1>
+        <p id="maintananceNoticeDesc">This site is under maintance, the site may not function as intended during this period. Thank you for your understanding and patience.</p>
+        <script>
+            function closeMaintananceNotice() {
+                let ntc = document.getElementById('maintananceNotice_');
+                ntc.style.display = "none";
+            }
+        </script>    
+    </div>
+    </body>
+</html>
